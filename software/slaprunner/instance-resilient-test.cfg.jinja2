@@ -49,3 +49,17 @@ config-cloud9-frontend-domain = google.com
 return = backend_url
 
 [slap-parameter]
+# Default parameters for distributed deployment
+# I.e state "backup1 of maria should go there, ..."
+# XXX-Cedric: Hardcoded number of backups. Should be dynamically generated.
+runner1-computer-guid =
+pbs-runner1-computer-guid =
+runner2-computer-guid =
+pbs-runner2-computer-guid =
+runner3-computer-guid =
+pbs-runner3-computer-guid =
+# XXX-Cedric: Hardcoded parameters. Should be dynamically generated.
+domain =
+authorized-key =
+instance-amount = 10
+debug = false
