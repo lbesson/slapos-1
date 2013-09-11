@@ -79,7 +79,7 @@ class Recipe(GenericBaseRecipe):
     #config_file = self.createFile(self.options['slapos.cfg'],
     #    self.substituteTemplate(self.getTemplateFilename('slapos.cfg.in'),
     #    configuration))
-    config_file = path_list.append(os.path.abspath(configuration['etc_dir'] + '/slapos.cfg'))
+    config_file = configuration['etc_dir'] + 'slapos.cfg'
 
     environment = dict(
         PATH=os.path.dirname(
