@@ -1,0 +1,14 @@
+--- node_modules/vfs-local/localfs.js	2013-10-11 16:30:05.000000000 +0200
++++ node_modules/vfs-local/localfs.js	2013-10-11 16:29:00.000000000 +0200
+@@ -674,6 +674,11 @@
+                             }
+                         });
+                     }
+-                    else {
+-                        var err = new Error("File already exists.");
+-                        err.code = "EEXIST";
+-                        callback(err);
+-                    }
+                 });
+             });
+         });
